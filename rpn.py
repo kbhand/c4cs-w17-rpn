@@ -1,5 +1,6 @@
  #!/usr/bin/env python3
 
+import readline
 import operator
 
 def add(arg1, arg2):
@@ -19,6 +20,9 @@ OPERATORS = {
 
 def calculate(arg):
 	stack = list()
+	if False:
+		print("Branch never taken")
+
 	for operand in arg.split():
 		try:
 			operand = float(operand)
